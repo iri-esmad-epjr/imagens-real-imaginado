@@ -1,0 +1,259 @@
+/* FONTS */
+@font-face {
+    font-family: 'Kanit_Bold';
+    src: url(../fonts/Kanit/Kanit-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Kanit_Regular';
+    src: url(../fonts/Kanit/Kanit-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Kanit_Light';
+    src: url(../fonts/Kanit/Kanit-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Kanit_Medium';
+    src: url(../fonts/Kanit/Kanit-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Kanit_Semibold';
+    src: url(../fonts/Kanit/Kanit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Cormorant_Garamond_Bold';
+    src: url(../fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Cormorant_Garamond_Regular';
+    src: url(../fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cormorant_Garamond_Light';
+    src: url(../fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf);
+}
+
+/* MENU */
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: transparent;
+}
+
+ul{
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+.btns_menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    flex: 1 0 0;
+}
+
+.btn_menu{
+    color: #0E0E0E;
+    font-family: 'Kanit_Regular';
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn_menu:hover{
+    color: #0E0E0E;
+    font-family: 'Cormorant_Garamond_Regular';
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+}
+
+.btn_menu:focus{
+    color: #0E0E0E;
+    font-family: 'Cormorant_Garamond_Regular';
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+}
+
+/* BACKGROUND VIDEO */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #C1B655; /* verde com opacidade */
+  mix-blend-mode: exclusion;
+  z-index: 1;
+}
+
+/*VIDEO INFO*/
+
+.videoinfo{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videodetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.videotitle{
+    color: #0E0E0E;
+    text-align: center;
+    font-family: "Cormorant_Garamond_Bold";
+    font-size: 80px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.videoauthor{
+    color: #0E0E0E;
+    text-align: left;
+    font-family: 'Kanit_Semibold';
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.videoyear{
+    color: #0E0E0E;
+    text-align: right;
+    font-family: 'Kanit_Regular';
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 40vh;
+    transition: opacity 0.5s ease;
+}
+
+.text-overlay p {
+    opacity: 0.8;
+}
+
+/* BUTTON CALL TO ACTION */
+
+a {
+    text-decoration: none;
+}
+
+.btn-callforpapers{
+    border-radius: 50px;
+    border-style: solid;
+    background: transparent;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding-right: 30px;
+    transition: 0.5s ease;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.callforpapers {
+    color: #0E0E0E;
+    font-family: 'Kanit_Regular';
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    height: 50px;
+}
+
+.btn-callforpapers:hover{
+    background: #CABE4F;
+}
+
+.callforpapers .txt-callforpapers{
+    margin: 0 auto;
+    line-height: 1;
+}
+
+.icn-callforpapers{
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: absolute;
+    right: -1px;
+}
+
+/* SOBRE O IRI */
+
+.titulo1 {
+    color: #0E0E0E;
+    text-align: left;
+    font-family: "Cormorant_Garamond_Bold";
+    font-size: 4px;
+    text-transform: uppercase;
+    margin: 0;
+}
