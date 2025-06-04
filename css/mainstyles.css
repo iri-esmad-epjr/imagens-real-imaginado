@@ -42,6 +42,77 @@
     src: url(../fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf);
 }
 
+/* TEXT */
+.titulo1 {
+    color: #0E0E0E;
+    text-align: left;
+    font-family: "Cormorant_Garamond_Bold";
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.titulo2 {
+    color: #0E0E0E;
+    text-align: left;
+    font-family: "Cormorant_Garamond_Bold";
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.titulo2-w{
+    color: #E4E4DA;
+    text-align: left;
+    font-family: "Cormorant_Garamond_Bold";
+    font-size: 38px;
+    text-transform: uppercase;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.titulo3{
+    color: #0E0E0E;
+    text-align: left;
+    font-family: "Cormorant_Garamond_Bold";
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.txt-1 {
+    color: #0E0E0E;
+    text-align: left;
+    font-family: "Kanit_Light";
+    font-size: 20px;
+}
+
+.txt-2 {
+    color: #0E0E0E;
+    text-align: right;
+    font-family: "Kanit_Light";
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.edc-btns-txt-arquivo{
+    text-decoration: none;
+    color: #0E0E0E;
+    text-align: right;
+    font-family: "Kanit_Light";
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.edc-btns-arquivo:hover{
+    opacity: 70%;
+}
+
+.edc-btns-txt{
+    color: #E4E4DA;
+    text-align: right;
+    font-family: "Kanit_Light";
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
 /* MENU */
 
 .navbar {
@@ -52,7 +123,7 @@
 }
 
 ul{
-    padding: 0px 30px;
+    padding: 0px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,28 +208,97 @@ body{
     flex-shrink: 0;
 }
 
-.titulo1 {
-    color: #0E0E0E;
-    text-align: left;
-    font-family: "Cormorant_Garamond_Bold";
-    font-size: 48px;
-    text-transform: uppercase;
-    padding: 0px 60px;
-    margin: 10px 0;
+.content-dtls{
+    padding: 0 40px 0 60px;
 }
 
-.txt-1 {
-    color: #0E0E0E;
-    text-align: left;
-    font-family: "Kanit_Light";
-    font-size: 20px;
-    padding: 0px 60px;
-}
-
-/* COMISSÕES */
+/* COMISSOES */
 .comissoes{
     background-color: #C1B655;
-    height: 500px;
+    height: auto;
+    overflow-y: hidden;
+    align-self: center;
+    padding: 80px 120px;
+}
+
+.cms{
+    display: flex;
+    flex-shrink: 0;
+}
+
+.cms-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 110px;
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    display: inline-table;
+}
+
+td {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+}
+
+/* EDICOES ANTERIORES */
+.edc-ant{
+    background-color: #0E0E0E;
+    height: auto;
+    padding: 80px 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    overflow-y: hidden;
+}
+
+.edc-content{
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.edc-img{
+    background-color: #C1B655;
+    display: flex;
+    height: auto;
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.edc-btns{
+    text-decoration: none;
+    color: #E4E4DA;
+    border-radius: 50px;
+    border-style: solid;
+    background: transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: send;
+    width: 230px;
+    bottom: 10px;
+    padding: 12px 0;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.edc-btns-arquivo{
+    background-color: #C1B655;
+    border-color: #C1B655;
+    border-radius: 50px;
+    border-style: solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: send;
+    width: 230px;
+    bottom: 10px;
+    padding: 12px 0;
+    margin-right: 10px;
+    margin-top: 20px;
 }
 
 /* FOOTER */
