@@ -42,7 +42,7 @@
     src: url(../fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf);
 }
 
-/* TEXT */
+/* COMMON TEXT */
 .titulo1 {
     color: #0E0E0E;
     text-align: left;
@@ -86,27 +86,6 @@
 
 .txt-2 {
     color: #0E0E0E;
-    text-align: right;
-    font-family: "Kanit_Light";
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-.edc-btns-txt-arquivo{
-    text-decoration: none;
-    color: #0E0E0E;
-    text-align: right;
-    font-family: "Kanit_Light";
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-.edc-btns-arquivo:hover{
-    opacity: 70%;
-}
-
-.edc-btns-txt{
-    color: #E4E4DA;
     text-align: right;
     font-family: "Kanit_Light";
     text-transform: uppercase;
@@ -270,7 +249,7 @@ td {
     flex-shrink: 0;
 }
 
-.edc-btns{
+.btns-edc{
     text-decoration: none;
     color: #E4E4DA;
     border-radius: 50px;
@@ -284,9 +263,20 @@ td {
     padding: 12px 0;
     margin-right: 10px;
     margin-top: 20px;
+    transition: 0.6s ease;
 }
 
-.edc-btns-arquivo{
+.btns-edc:hover{
+    background-color: rgb(228, 228, 218);
+    color: #0E0E0E;
+    border-color: #E4E4DA;
+}
+
+.btns-edc:active{
+    background-color: rgb(228, 228, 218, 0.2);
+}
+
+.btn-edc-arquivo{
     background-color: #C1B655;
     border-color: #C1B655;
     border-radius: 50px;
@@ -299,6 +289,77 @@ td {
     padding: 12px 0;
     margin-right: 10px;
     margin-top: 20px;
+    transition: 0.5s ease;
 }
 
+.btn-edc-arquivo:hover{
+    color: #0E0E0E;
+    background-color: rgb(193, 182, 85, 0.7);
+    border-color: rgb(193, 182, 85);
+}
+
+.btn-edc-arquivo:active{
+    color: #C1B655;
+    background-color: transparent;
+    border-color: rgb(193, 182, 85);
+}
+
+.edc-btns-txt-arquivo{
+    text-decoration: none;
+    color: #0E0E0E;
+    text-align: center;
+    font-family: "Kanit_Light";
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.edc-btns-txt{
+    color: #E4E4DA;
+    text-align: right;
+    font-family: "Kanit_Light";
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* NOTICIAS */
+.noticias{
+    background-color: #E4E4DA;
+    padding: 80px 120px;
+    flex-shrink: 0;
+}
+.ntc-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-ntc-todas{
+    text-decoration: none;
+    background-color: transparent;
+    border-color: #0E0E0E;
+    border-radius: 50px;
+    border-style: solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: send;
+    width: 230px;
+    bottom: 10px;
+    padding: 12px 0;
+    margin-right: 10px;
+    margin-top: 20px;
+    transition: 0.5s ease;
+}
+
+.btn-txt-1{
+    text-decoration: none;
+    color: #0E0E0E;
+    text-align: center;
+    font-family: "Kanit_Light";
+    text-transform: uppercase;
+    font-size: 16px;
+    width: auto;
+    height: fit-content;
+    padding: 12px 70px;
+}
 /* FOOTER */
