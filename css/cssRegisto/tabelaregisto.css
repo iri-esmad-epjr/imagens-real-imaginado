@@ -1,0 +1,73 @@
+.tabela-container {
+  background-color: #0e0e0e;
+  color: #E4E4DA;
+  padding-bottom: 20px;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 0.5px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.tabela-container h2 {
+  font-size: 48px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.tabela-container h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #E4E4DA;
+  margin-top: 10px;
+}
+
+.tabela-precos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0;
+}
+
+.tabela-precos th,
+.tabela-precos td {
+  padding: 16px;
+  font-size: 20px;
+  text-align: left;
+  border-bottom: 1px solid #E4E4DA;
+  margin-top: 0;
+}
+
+.tabela-precos th {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.tabela-precos td:first-child {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.botao-inscricao {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.botao {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #E4E4DA;
+  color: #E4E4DA;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.botao:hover {
+  background-color: #E4E4DA;
+  color: #0e0e0e;
+}
