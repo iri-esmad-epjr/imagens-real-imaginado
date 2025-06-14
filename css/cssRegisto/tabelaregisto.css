@@ -8,12 +8,14 @@
   padding-top: 0.5px;
   padding-left: 40px;
   padding-right: 40px;
+  margin-bottom: 0;
 }
 
 .tabela-container h2 {
   font-size: 48px;
   margin-bottom: 0;
   position: relative;
+  font-family: "Cormorant_Garamond_Bold";
 }
 
 .tabela-container h2::after {
@@ -29,6 +31,8 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 0;
+  font-family: "Kanit_Light";
+  margin-bottom: 25px;
 }
 
 .tabela-precos th,
@@ -52,8 +56,9 @@
 }
 
 .botao-inscricao {
-  margin-top: 40px;
+  margin-top: 10px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .botao {
@@ -65,6 +70,7 @@
   font-size: 16px;
   border-radius: 20px;
   transition: background-color 0.3s, color 0.3s;
+  font-family: "Kanit_Light";
 }
 
 .botao:hover {

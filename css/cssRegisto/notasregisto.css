@@ -33,6 +33,7 @@
   text-align: left;
   margin-top: 20px;
   margin-bottom: 0;
+   font-family: "Cormorant_Garamond_Bold";
 }
 
 
@@ -42,6 +43,7 @@
   align-items: flex-start;
   text-align: left;
   line-height: 1.5;
+  font-family: "Kanit_Light";
 }
 
 .termos1{
