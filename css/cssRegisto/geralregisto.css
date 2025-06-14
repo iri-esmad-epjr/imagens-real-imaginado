@@ -1,0 +1,22 @@
+body {
+  background-color: #E4E4DA;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  position: relative; /* não use absolute aqui */
+  width: 100%;
+  height: 650px;
+  padding: 0;
+  margin: 0;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+}
