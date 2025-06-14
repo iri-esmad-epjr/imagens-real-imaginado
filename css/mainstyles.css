@@ -424,7 +424,7 @@ td {
     display: flex;
     flex-direction: column;
     width: 49.5%;
-    height: 0%;
+    height: auto;
     flex-shrink: 0;
 }
 
