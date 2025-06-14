@@ -2,13 +2,12 @@
   display: flex;
   justify-content: space-between;
   gap: 20px; /* espaço entre os blocos */
-  padding: 0;
+  padding: 0px;
   margin: 0; /* centraliza o container */
   flex-wrap: wrap; /* garante que se adapte em telas menores */
   width: 100%;
   text-align: left;
   margin-top: 0;
-  padding-top: 0;
 }
 
 .info-bloc {
@@ -17,47 +16,41 @@
   padding: 20px;
   box-sizing: border-box;
   text-align: left;
-  margin-top: 0;
-  padding-top: 0;
-  margin-left: 0;
 }
 
 .info-bloc h2 {
   position: relative;
   display: inline-block;
   font-size: 48px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   color: #0e0e0e;
   text-align: left;
-  margin-top: 20px;
-  margin-bottom: 0;
+  margin-top: 0;
 }
 
 
-
-.info-bloc ul {
-  list-style: none;
-  align-items: flex;
+.info-bloc p {
   font-size: 20px;
   color: #0e0e0e;
-  line-height: 1.5;
+  align-items: flex-start;
+  text-align: left;
+}
+
+
+.info-bloc ul {
+  font-size: 20px;
+  color: #0e0e0e;
+  line-height: 1;
   text-align: left;
   border-top: 1px solid #0e0e0e;
   padding: 15px 0;
-  padding-left: 0;
-  margin: 0;
+  padding-left: 20px;
 }
 
 .info-bloc li {
   font-size: 20px;  
-  font-weight: normal;
-  text-align: left;
-}
-
-.info-bloc li strong {
-  display: block;
   font-weight: bold;
-  margin-bottom: 4px;
+  text-align: left;
 }
 
 .info-insc {
@@ -69,3 +62,4 @@
 .info-insc ul {
   padding-left: 0;
 }
+
