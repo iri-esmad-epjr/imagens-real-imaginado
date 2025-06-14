@@ -489,10 +489,6 @@ td {
     flex-direction: row;
 }
 
-.ftr-centro{
-    
-}
-
 .inf-legal{
     display: flex;
     flex-direction: column;
