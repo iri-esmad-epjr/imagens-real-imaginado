@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  background-color: #D9D9D9;
+  color: #0e0e0e;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+}
+
+main {
+  display: flex;
+}
+
+.sidebartext {
+  width: 30%;
+  padding: 2rem;
+}
+
+.sidebartext h1 {
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+.sidebartext p {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.sidebartext ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebartext li {
+  font-size: 28px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #0e0e0e;
+  padding-bottom: 10px;
+}
+
+.galeria {
+  width: 70%;
+  padding: 2rem;
+}
+
+.filtros {
+  margin-bottom: 2rem;
+}
+
+.filtros button {
+  background: none;
+  border: 1px solid #444;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.filtros .active {
+  background-color: #222;
+  color: #fff;
+}
+
+.imagens-gal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.imagens-gal img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.row-galer {
+  display: flex;
+  gap: 1rem;
+}
+
+.row-galer img {
+  width: 50%;
+}
