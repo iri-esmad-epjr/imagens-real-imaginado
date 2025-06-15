@@ -84,6 +84,13 @@
     text-transform: uppercase;
 }
 
+.titulo5{
+    color: #E4E4DA;
+    font-family: "Kanit_Semibold";
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
 .txt-1 {
     color: #0E0E0E;
     text-align: left;
@@ -104,6 +111,13 @@
     font-family: "Kanit_Light";
     text-transform: uppercase;
     font-size: 16px;
+}
+
+.txt-3 {
+    color: #E4E4DA;
+    font-family: "Kanit_Light";
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 /* MENU */
@@ -236,6 +250,7 @@ td {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 15px 0;
+    
 }
 
 /* EDICOES ANTERIORES */
@@ -341,7 +356,7 @@ td {
     background-color: #E4E4DA;
     padding: 80px 120px;
     flex-shrink: 0;
-    display: flexbox;
+    display: block;
 }
 
 .ntc-header{
@@ -392,11 +407,9 @@ td {
 
 .ntc-section{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     flex-shrink: 0;
     margin: 0px;
-    height: auto;
 }
 
 .bdr-ntc{
@@ -410,43 +423,35 @@ td {
     background-color: #E4E4DA;    
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 49%;
+    width: 49.5%;
     height: auto;
     flex-shrink: 0;
 }
 
 .ntc-info{
-    padding-left: 20px;
+    background-color: #E4E4DA;
+    padding: 10px 20px 25px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 18px;
 }
 
-.img-ntc{
-    height: auto;
+.pdt{
+    margin: 0;
+    padding-bottom: 5px;
 }
 
 .ntc-2{
-    width: 24%;
+    width: 49%;
     display: flex;
     flex-direction: column;
-    height: auto;
+    justify-content: space-between;
     flex-shrink: 0;
-    gap: 2%;
+    gap: 8px;
 }
 
 .ntc-centro{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.ntc-3{
-    background-color: #55c15e;    
-    display: flex;
-    width: 24%;
-    flex-shrink: 0;
-    height: auto;
+    padding: 30px 20px 25px 20px;
 }
 
 /* FOOTER */
@@ -462,14 +467,15 @@ td {
 .ftr-info{
     background-color: orange;
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
 }
 
-.ftr-infos{
+.ftr-dt{
     color: #E4E4DA;
-    width: 65%;
     display: flex;
     flex-direction: row;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -478,11 +484,18 @@ td {
     color: #E4E4DA;
 }
 
-.inf-legal{
+.ftr-icn{
+    display: flex;
+    flex-direction: row;
+}
 
+.inf-legal{
+    display: flex;
+    flex-direction: column;
 }
 
 .ftr-newsletter{
     background-color: rgb(0, 136, 255);
     width: 35%;
+    padding-left: 40px;
 }
