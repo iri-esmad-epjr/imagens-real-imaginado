@@ -51,6 +51,13 @@
     text-transform: uppercase;
 }
 
+.titulo1-a {
+    text-align: left;
+    font-family: "Cormorant_Garamond_Bold";
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
 .titulo2 {
     color: #0E0E0E;
     text-align: left;
@@ -118,6 +125,12 @@
     font-family: "Kanit_Light";
     text-transform: uppercase;
     font-size: 14px;
+}
+
+.txt-4 {
+    font-family: "Kanit_Light";
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 /* MENU */
@@ -452,50 +465,4 @@ td {
 
 .ntc-centro{
     padding: 30px 20px 25px 20px;
-}
-
-/* FOOTER */
-.footer{
-    background-color: #0E0E0E;
-    height: 400px;
-    padding: 40px;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-}
-
-.ftr-info{
-    background-color: orange;
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    padding-right: 40px;
-}
-
-.ftr-dt{
-    color: #E4E4DA;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.ftr-txt{
-    text-decoration: none;
-    color: #E4E4DA;
-}
-
-.ftr-icn{
-    display: flex;
-    flex-direction: row;
-}
-
-.inf-legal{
-    display: flex;
-    flex-direction: column;
-}
-
-.ftr-newsletter{
-    background-color: rgb(0, 136, 255);
-    width: 35%;
-    padding-left: 40px;
 }
