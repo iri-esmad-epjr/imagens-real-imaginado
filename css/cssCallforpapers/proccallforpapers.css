@@ -1,0 +1,29 @@
+.apossub {
+  display: block;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: left;
+  margin-top: 40px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.apossub h2 {
+  font-size: 36px;
+  color: #0e0e0e;
+  margin-bottom: 0;
+  margin-left: 20px;
+  font-family: "Cormorant_Garamond_Bold";
+}
+
+.proctopics {
+  padding-left: 20px;
+  border-top: 1px solid #0e0e0e;
+  font-size: 18px;
+  line-height: 2.5;
+  color: #0e0e0e;
+  margin-left: 20px;
+  margin-top: 8px;
+  font-family: "Kanit_Light";
+}

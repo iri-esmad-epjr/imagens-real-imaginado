@@ -1,7 +1,8 @@
-body {
+main {
   background-color: #E4E4DA;
   margin: 0;
   padding: 0;
+  display: flexbox;
 }
 
 .banner {
@@ -9,7 +10,10 @@ body {
   width: 100%;
   height: 650px;
   padding: 0;
-  margin: 0;
+  display: flexbox;
+  display: block; /* elimina espaço extra de imagens inline */
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .banner img {
@@ -18,7 +22,6 @@ body {
   display: block;
   padding: 0;
   overflow: hidden;
-  margin: 0;
 }
 
 .titulo-banner {
@@ -27,7 +30,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #0e0e0e;
+  color: #0E0E1A;
   font-size: 120px;
   text-align: center;
   z-index: 2;
