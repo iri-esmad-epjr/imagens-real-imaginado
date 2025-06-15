@@ -4,13 +4,6 @@ body {
   color: #0e0e0e;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  font-size: 0.9rem;
-}
-
 main {
   display: flex;
 }
