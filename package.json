@@ -1,0 +1,26 @@
+{
+  "name": "imagens-real-imaginado",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iri-esmad-epjr/imagens-real-imaginado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iri-esmad-epjr/imagens-real-imaginado/issues"
+  },
+  "homepage": "https://github.com/iri-esmad-epjr/imagens-real-imaginado#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.15.2",
+    "nodemon": "^3.1.10"
+  }
+}
