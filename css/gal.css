@@ -6,6 +6,7 @@ body {
 
 main {
   display: flex;
+  flex-direction: row;
 }
 
 .sidebartext {
@@ -37,6 +38,12 @@ main {
   padding-bottom: 10px;
 }
 
+.sidebartext p,
+.galeria {
+  align-content: flex-start;
+   
+}
+
 .galeria {
   width: 70%;
   padding: 2rem;
@@ -48,16 +55,17 @@ main {
 
 .filtros button {
   background: none;
-  border: 1px solid #444;
+  border: 1px solid #0e0e0e;
   padding: 0.5rem 1rem;
   margin-right: 0.5rem;
   cursor: pointer;
   font-size: 0.8rem;
 }
 
-.filtros .active {
-  background-color: #222;
-  color: #fff;
+.filtros button:hover {
+  background-color: #D9D9D9;
+  color:#0e0e0e;
+
 }
 
 .imagens-gal {
@@ -68,7 +76,7 @@ main {
 
 .imagens-gal img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
