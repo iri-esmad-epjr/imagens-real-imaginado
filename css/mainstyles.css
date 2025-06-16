@@ -142,14 +142,14 @@
     background: transparent;
 }
 
-ul{
+.ul-menu{
     padding: 0px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-li{
+.li-menu{
     list-style-type: none;
 }
 
