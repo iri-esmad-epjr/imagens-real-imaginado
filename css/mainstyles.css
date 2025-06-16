@@ -136,10 +136,13 @@
 /* MENU */
 
 .navbar {
-    position: absolute;
     width: 100%;
-    z-index: 10;
     background: transparent;
+}
+
+.navbar-dt{
+    z-index: 10;
+    position: absolute;
 }
 
 .ul-menu{
