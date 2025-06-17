@@ -22,14 +22,15 @@ main {
 .sidebartext h1 {
   font-size: 48px;
   margin-bottom: 1rem;
-  display: inline-block;
   padding-bottom: 0.5rem;
   margin-top: 0;
   padding-top: 0;
+   font-family: 'Cormorant_Garamond_Bold';
 }
 
 .sidebartext p {
   font-size: 18px;
+  font-family: 'Kanit_light';
   line-height: 1.6;
   margin-bottom: 2rem;
   text-align: justify;
@@ -38,17 +39,43 @@ main {
 .sidebartext ul {
   list-style: none;
   padding: 0;
+  text-decoration: none;
 }
 
 .sidebartext li {
-  font-size: 28px;
   margin-bottom: 1.5rem;
   cursor: pointer;
   border-bottom: 1px solid #0e0e0e;
-  padding-bottom: 0.5rem;
-  transition: color 0.3s;
+  padding-bottom: 0.4rem;
+  text-decoration: none;
 }
 
+
+.sidebartext button {
+  font-size: 18px;
+  font-family: 'Kanit_light';
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sidebartext button:hover{
+    color: #0E0E0E;
+    font-family: 'Cormorant_Garamond_Regular';
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+}
+
+.sidebartext button:focus{
+    color: #0E0E0E;
+    font-family: 'Cormorant_Garamond_Regular';
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+}
 
 .sidebartext p,
 .galeria {
@@ -69,6 +96,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  font-family: 'Kanit_light';
+  font-size: 16px;
   gap: 0.5rem;
   margin-top: 0;
   margin-bottom: 0;
