@@ -19,13 +19,14 @@ const newsletterSchema = new mongoose.Schema({
 const Newsletter = mongoose.model('Newsletter', NewsletterSchema);
 
 //ENDPOINTS
-  let newSubs = new Newsletter(req.body);
-  newSubs
+app.newsletter("/newsletter", function (req, res) {
+  let newSubs = new Posts(req.body);
+  newPosts
     .save()
     .then(function (posts) {
       res.send(posts);
     })
     .catch(function (err) {
-      res.status(400).send({ message: "Error adding email subscrition!", error: err });
+      res.status(400).send({ message: "Error adding posts", error: err });
     });
 });
