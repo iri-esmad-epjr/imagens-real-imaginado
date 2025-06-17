@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  background-color: #D9D9D9;
+  color: #0e0e0e;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sidebartext {
+  width: 35%;
+  padding: 2rem;
+}
+
+.sidebartext h1 {
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+.sidebartext p {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.sidebartext ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebartext li {
+  font-size: 28px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #0e0e0e;
+  padding-bottom: 10px;
+}
+
+.sidebartext p,
+.galeria {
+  align-content: flex-start;
+   
+}
+
+.galeria {
+  width: 65%;
+  padding: 2rem 2rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+}
+
+.filtros {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filtros button {
+  background: none;
+  border: 1px solid #0e0e0e;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 20px;
+}
+
+.filtros button:hover {
+  background-color: #D9D9D9;
+  color:#0e0e0e;
+
+}
+
+.imagens-gal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.imagens-gal img {
+  width: 100%;
+  object-fit: cover;
+  border-color: 1px solid #0e0e0e;
+  max-height: 10%;
+}
+
+.row-galer {
+  display: flex;
+  gap: 1rem;
+}
+
+.row-galer img {
+  width: 50%;
+  object-fit: cover;
+  border-color: 1px solid #0e0e0e;
+}
