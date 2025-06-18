@@ -36,6 +36,7 @@ body {
 }
 
 .call-btn {
+   font-family: "Cormorant_Garamond_Regular";
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -52,7 +53,12 @@ body {
   padding-bottom: 0;
   text-decoration: none;
   font-size: 20px;
-  font-family: 'Kanit_light';
+  font-family: "Cormorant_Garamond_Regular";
+}
+
+.butto-call:hover {
+  font-size: 20px;
+  font-family: "Cormorant_Garamond_Bold";
 }
 
 .icon-buttn {
@@ -61,7 +67,7 @@ body {
   object-fit: contain;
 }
 
-.icon-buttn.hover {
+.icon-buttn:hover {
   display: none;
 }
 

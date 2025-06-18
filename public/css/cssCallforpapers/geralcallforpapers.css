@@ -21,9 +21,6 @@ main {
   padding: 0;
   overflow: hidden;
   margin: 0;
-}
-
-.img-call {
   background-color: #C1B655;
   mix-blend-mode: exclusion;
 }
@@ -34,7 +31,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #0E0E1A;
+  color: #0e0e0e;
   font-size: 120px;
   text-align: center;
   z-index: 2;
