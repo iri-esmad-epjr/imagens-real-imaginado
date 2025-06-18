@@ -125,7 +125,7 @@ app.put("/programa/:id", function (req, res) {
 app.get('/programa/:id', (req, res) => {
   Programa.findById(req.params.id)
     .then(evento => {
-      if (!evento) return res.status(404).send({ message: 'Evento não encontrado' });
+      if (!evento) return res.status(404).send({ message: 'Evento não encontrado!!' });
       res.send(evento);
     })
     .catch(err => res.status(500).send({ message: 'Erro ao buscar evento', error: err }));

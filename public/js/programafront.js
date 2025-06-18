@@ -3,7 +3,7 @@ const form = document.getElementById('add-event');
 
 const isAdmin = window.location.pathname.endsWith('admin_programa.html');
 
-// Função para buscar e renderizar os eventos
+// get events
 function fetchEventos() {
   fetch('http://localhost:3000/programa')
     .then(res => res.json())
@@ -59,7 +59,7 @@ function fetchEventos() {
         });
       }
 
-      // Botões de eliminar
+      // delete
       container.querySelectorAll('.btn-delete').forEach(btn => {
         btn.addEventListener('click', () => {
           const id = btn.dataset.id;
@@ -77,11 +77,11 @@ function fetchEventos() {
         });
       });
 
-      // Botões de editar
+      // edit
       container.querySelectorAll('.btn-edit').forEach(btn => {
         btn.addEventListener('click', () => {
           const id = btn.dataset.id;
-          console.log('id:', id); // aqui tá fixo!
+          console.log('id:', id);
 
           fetch(`http://localhost:3000/programa/${id}`)
             .then(res => {
@@ -104,7 +104,7 @@ function fetchEventos() {
     .catch(console.error);
 }
 
-// Enviar novo evento ou editar
+// new event
 form.addEventListener('submit', function (e) {
   e.preventDefault();
   const formData = new FormData(form);
