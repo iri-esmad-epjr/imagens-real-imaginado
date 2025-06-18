@@ -1,6 +1,8 @@
 const container = document.getElementById('prg-section');
 const form = document.getElementById('add-event');
 
+const isAdmin = window.location.pathname.endsWith('admin_programa.html');
+
 // Função para buscar e renderizar os eventos
 function fetchEventos() {
   fetch('http://localhost:3000/programa')
@@ -37,8 +39,12 @@ function fetchEventos() {
             <td class="agd-dt">${ev.titulo}</td>
             <td class="agd-dt">${ev.oradores}</td>
             <td class="agd-dt">${ev.linkInscricao ? `<a href="${ev.linkInscricao}" class="insc-agd">Inscreve-te aqui</a>` : ''}</td>
-            <td><button class="btn-edit" data-id="${ev._id}">Editar</button></td>
-            <td><button class="btn-delete" data-id="${ev._id}">Eliminar</button></td>
+            ${isAdmin ? `
+              <td>
+                <button class="btn-edit" data-id="${ev._id}">Editar</button>
+                <button class="btn-delete" data-id="${ev._id}">Eliminar</button>
+              </td>
+            ` : ''}
           `;
 
           table.appendChild(tr);
@@ -75,6 +81,7 @@ function fetchEventos() {
       container.querySelectorAll('.btn-edit').forEach(btn => {
         btn.addEventListener('click', () => {
           const id = btn.dataset.id;
+          console.log('id:', id); // aqui tá fixo!
 
           fetch(`http://localhost:3000/programa/${id}`)
             .then(res => {
