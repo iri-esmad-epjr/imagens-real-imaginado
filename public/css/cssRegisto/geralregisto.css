@@ -14,8 +14,6 @@ body {
 }
 
 .banner2 img {
-  background-color: #C1B655;
-  mix-blend-mode: exclusion;
   width: 100%;
   height: 100%;
   display: flex;
