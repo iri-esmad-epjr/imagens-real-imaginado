@@ -22,9 +22,16 @@ main {
 .sidebartext h1 {
   font-size: 48px;
   margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+  padding-top: 0;
+   font-family: 'Cormorant_Garamond_Bold';
 }
 
 .sidebartext p {
+  font-size: 18px;
+  font-family: 'Kanit_light';
+  line-height: 1.6;
   margin-bottom: 2rem;
   text-align: justify;
 }
@@ -36,13 +43,32 @@ main {
 }
 
 .sidebartext li {
-  font-size: 28px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   cursor: pointer;
   border-bottom: 1px solid #0e0e0e;
-  padding-bottom: 10px;
+  padding-bottom: 0.4rem;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Kanit_light';
 }
 
+.sidebartext li:hover {
+    color: #0E0E0E;
+    font-family: 'Cormorant_Garamond_Regular';
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+}
+
+.sidebartext li:focus {
+    color: #0E0E0E;
+    font-family: 'Cormorant_Garamond_Regular';
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+}
 
 .sidebartext p,
 .galeria {
@@ -62,6 +88,9 @@ main {
 .filtros {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  font-family: 'Kanit_light';
+  font-size: 16px;
   gap: 0.5rem;
   margin-top: 0;
   margin-bottom: 0;
@@ -69,7 +98,7 @@ main {
 }
 
 .filtros button {
-  background: none;
+  transition: background-color 0.3s, color 0.3s;
   border: 1px solid #0e0e0e;
   padding: 0.4rem 0.8rem;
   cursor: pointer;
@@ -77,13 +106,16 @@ main {
   border-radius: 20px;
 }
 
-.filtros button:hover,
-.filtros button.active {
-  background-color: #D9D9D9;
-  color:#0e0e0e;
-
+.filtros button:hover {
+  background-color: #E4E4DA;
+  color: #0e0e0e;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid #0e0e0e;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 20px;
 }
-
 .galeria-img {
   display: flex;
   grid-template-columns: 1fr;
@@ -109,11 +141,11 @@ main {
   margin-top: 0;
   padding-top: 0;
   width: 950px;
-  height: 400px;
+  height: 500px;
 }
 
 .mid-galeria img {
-  height: 125px;
+  height: 130px;
 }
 
 .row-galer {
@@ -125,7 +157,7 @@ main {
 
 .row-galer img {
   width: 100%;
-  height: 300px;
+  height: 400px;
   margin-right: 10px;
   gap: 1rem;
 }
@@ -139,7 +171,7 @@ main {
 
 .end-galeria img {
   width: 950px;
-  height: 125px;
+  height: 130px;
   border: 1px solid #0e0e0e;
 }
 
