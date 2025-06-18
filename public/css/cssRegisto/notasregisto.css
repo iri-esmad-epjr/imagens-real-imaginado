@@ -49,6 +49,7 @@
 .termos1{
   border-top: 1px solid #0e0e0e;
   padding: 15px 0;
+  margin-top: 20px;
 } 
 
 .termos-notas {
@@ -62,4 +63,5 @@
   border-top: 1px solid #0e0e0e;
   padding: 15px 0;
   margin-right: 20px;
+  margin-top: 20px;
 }
