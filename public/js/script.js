@@ -1,9 +1,9 @@
 const videos = [
-  'public/media/videos/homepage_bg_01.mp4',
-  'public/media/videos/homepage_bg_02.mp4',
-  'public/media/videos/homepage_bg_05.mp4',
-  'public/media/videos/homepage_bg_04.mp4',
-  'public/media/videos/homepage_bg_05.mp4',
+  'media/videos/homepage_bg_01.mp4',
+  'media/videos/homepage_bg_02.mp4',
+  'media/videos/homepage_bg_05.mp4',
+  'media/videos/homepage_bg_04.mp4',
+  'media/videos/homepage_bg_05.mp4',
 ];
 
 const textos = [
