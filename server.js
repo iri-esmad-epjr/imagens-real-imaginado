@@ -1,39 +1,6 @@
-/*let express = require("express");
+let express = require("express");
 let mongoose = require("mongoose");
 let app = express();
-
-app.use(express.json());
-app.use(express.static("public"));
-
-//CONNECTION TO MONGODB
-const uri = 
-'mongodb+srv://admin:admin123@cluster0.su33qyu.mongodb.net/newsletterDB'
-mongoose.connect(uri);
-
-//SCHEMA FOR NEWSLETTER SUBS
-const newsletterSchema = new mongoose.Schema({
-    email: {type: String, required: true, unique: true,},
-    subscribedAt: {type: Date, default: Date.now,}
-});
-
-const Newsletter = mongoose.model('Newsletter', NewsletterSchema);
-
-//ENDPOINTS
-app.newsletter("/newsletter", function (req, res) {
-  let newSubs = new Posts(req.body);
-  newPosts
-    .save()
-    .then(function (posts) {
-      res.send(posts);
-    })
-    .catch(function (err) {
-      res.status(400).send({ message: "Error adding posts", error: err });
-    });
-});*/
-
-const express = require("express");
-const mongoose = require("mongoose");
-const app = express();
 
 app.use(express.json());
 app.use(express.static("public"));
@@ -92,4 +59,81 @@ app.get("/newsletter", function (req, res) {
     .catch(function (err) {
       res.status(500).send({ message: "Error fetching subscribers!", error: err });
     });
+});
+
+app.delete('/newsletter/:id', function (req, res) {
+    Newsletter.findByIdAndDelete(req.params.id)
+        .then(function (subs) {
+            if (subs) {
+                res.send({ message: 'Subscriber deleted successfully!' });
+            } else {
+                res.status(404).send({ message: 'Subscriber not found' });
+            }
+        })
+        .catch(function (err) {
+            res.status(500).send({ message: 'Error deleting Subscriber', error: err });
+        });
+});
+
+
+// PROGRAMA
+app.post("/programa", function (req, res) {
+  let { dia, horario, titulo, oradores, linkInscricao } = req.body;
+
+  if (!dia || !horario || !titulo || !oradores) {
+    return res.status(400).send({ message: "Campos obrigatórios em falta!" });
+  }
+
+  let newEvent = new Programa({ dia, horario, titulo, oradores, linkInscricao });
+
+  newEvent
+    .save()
+    .then(function (event) {
+      res.send(event);
+    })
+    .catch(function (err) {
+      res.status(400).send({ message: "Error adding event!", error: err });
+    });
+});
+
+app.get("/programa", function (req, res) {
+  Programa.find()
+    .then(function (events) {
+      res.send(events);
+    })
+    .catch(function (err) {
+      res.status(500).send({ message: "Error fetching events!", error: err });
+    });
+});
+
+app.put("/programa/:id", function (req, res) {
+  Programa.findByIdAndUpdate(req.params.id, req.body, { new: true })
+    .then(function (events) {
+      if (events) {
+        res.send(events);
+      } else {
+        res.status(404).send({ message: "Event not found!" });
+      }
+    })
+    .catch(function (err) {
+      res.status(500).send({ message: "Error updating event!", error: err });
+    });
+});
+
+app.delete('/programa/:id', function (req, res) {
+    Programa.findByIdAndDelete(req.params.id)
+        .then(function (event) {
+            if (event) {
+                res.send({ message: 'Event deleted successfully!' });
+            } else {
+                res.status(404).send({ message: 'Event not found!' });
+            }
+        })
+        .catch(function (err) {
+            res.status(500).send({ message: 'Error deleting event!', error: err });
+        });
+});
+
+app.listen(3000, function () {
+  console.log("Server running on http://localhost:3000");
 });
