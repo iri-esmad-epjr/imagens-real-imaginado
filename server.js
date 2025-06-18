@@ -1,9 +1,11 @@
 let express = require("express");
 let mongoose = require("mongoose");
+let path = require('path');
 let app = express();
 
 app.use(express.json());
 app.use(express.static("public"));
+
 
 const uri = "mongodb+srv://admin:admin123@cluster0.su33qyu.mongodb.net/iriDB";
 
@@ -98,8 +100,8 @@ app.post("/programa", function (req, res) {
 
 app.get("/programa", function (req, res) {
   Programa.find()
-    .then(function (events) {
-      res.send(events);
+    .then(function (event) {
+      res.send(event);
     })
     .catch(function (err) {
       res.status(500).send({ message: "Error fetching events!", error: err });
@@ -118,6 +120,15 @@ app.put("/programa/:id", function (req, res) {
     .catch(function (err) {
       res.status(500).send({ message: "Error updating event!", error: err });
     });
+});
+
+app.get('/programa/:id', (req, res) => {
+  Programa.findById(req.params.id)
+    .then(evento => {
+      if (!evento) return res.status(404).send({ message: 'Evento não encontrado' });
+      res.send(evento);
+    })
+    .catch(err => res.status(500).send({ message: 'Erro ao buscar evento', error: err }));
 });
 
 app.delete('/programa/:id', function (req, res) {
