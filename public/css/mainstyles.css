@@ -105,6 +105,12 @@
     text-transform: uppercase;
 }
 
+.titulo6{
+    color: #E4E4DA;
+    font-family: "Kanit_Semibold";
+    text-transform: uppercase;
+}
+
 .txt-1 {
     color: #0E0E0E;
     text-align: left;
@@ -125,6 +131,12 @@
     font-family: "Kanit_Light";
     text-transform: uppercase;
     font-size: 16px;
+}
+
+.txt-5{
+    font-family: "Kanit_Light";
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 .txt-3 {
@@ -496,26 +508,28 @@ body{
 }
 
 .prg-agenda{
-    background-color: #fefe00;
+    background-color: #E4E4DA;
     width: 100%;
     display: inline-flex;
-    justify-content: space-between;
 }
 
 .prg-table{
     border-collapse: collapse;
     width: 100%;
     justify-content: space-between;
+    background-color: #E4E4DA;
 }
 
 .prg-dt{
-    background-color: violet;
     width: 30%;
-    padding: 80px 40px;
+    padding: 80px 40px 100px;
+    border-right: 1px solid #0E0E0E;
+    height: auto;
+    background-color: #C1B655;
 }
 
 .agd-conteudo{
-    background-color: aqua;
+    background-color: #E4E4DA;
     width: 70%;
     padding: 80px 40px;
 }
@@ -523,35 +537,134 @@ body{
 .agd-dt{
     border-collapse: collapse;
     border-bottom: 1px solid black;
-    padding: 15px 0px; 
-}
-
-.agd-tr{
-    border-collapse: collapse;
-    border-bottom: 1px solid black;
-    padding: 15px 0; 
-    justify-content: space-between;
+    padding: 15px 10px; 
 }
 
 /* accordion */
 .btn-acd{
-    background-color: #eee;
+    background-color: #E4E4DA;
     color: #0E0E0E;
     cursor: pointer;
-    border-top: 0px;
+    border-top: 1px solid #0E0E0E;
     border-right: 0px;
     border-left: 0;
     border-bottom: 1px solid #0E0E0E;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 18px;
     transition: 0.4s;
     width: 100%;
-    padding: 20px;
-}
-
-.agdinfo{
+    padding: 22px 0;
     display: flex;
-    background-color: #E4E4DA;
+    justify-content: space-between;
+    border-collapse: collapse;
 }
 
+.btn-acd:hover{
+    background-color: rgb(193, 182, 85, 0.4);
+}
+
+.btn-acd.active{
+    background-color: rgb(193, 182, 85, 0.4);
+}
+
+.insc-agd{
+    text-decoration: none;
+    color: #0E0E0E;
+    font-weight: 1000;
+}
+
+/* Speakers */
+
+.speakers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0E0E0E;
+}
+
+.spk-direito{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    padding: 80px 40px;
+}
+
+.spk-esquerda{
+    padding: 80px 40px;
+    width: 50%;
+    color: #E4E4DA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.spk-txt{
+    font-size: 19px;
+    color: #E4E4DA;
+    padding-bottom: 10px;
+}
+
+.img-hover-box {
+  position: relative;
+  display: inline-block;
+  width: 350px;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-hover-box .spk-imghover {
+  width: 350px;
+  height: auto;
+  display: block;
+}
+
+.hover-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 14, 14, 0.8);
+  color: #E4E4DA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.img-hover-box:hover .hover-info {
+  opacity: 1;
+}
+
+.timeline-deadline{
+    background-color: #E4E4DA;
+    display: flex;
+    flex-direction: row;
+    padding: 80px 20px;
+}
+
+.deadlines{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px 20px;
+}
+
+.tml-table{
+    border-collapse: collapse;
+    display: inline-table;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.tml-td{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 15px 0; 
+}
