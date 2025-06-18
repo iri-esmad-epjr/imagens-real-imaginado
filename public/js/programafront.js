@@ -1,7 +1,9 @@
 const container = document.getElementById('prg-section');
 const form = document.getElementById('add-event');
 
-// Função para buscar e renderizar os eventos
+const isAdmin = window.location.pathname.endsWith('admin_programa.html');
+
+// get events
 function fetchEventos() {
   fetch('http://localhost:3000/programa')
     .then(res => res.json())
@@ -37,8 +39,12 @@ function fetchEventos() {
             <td class="agd-dt">${ev.titulo}</td>
             <td class="agd-dt">${ev.oradores}</td>
             <td class="agd-dt">${ev.linkInscricao ? `<a href="${ev.linkInscricao}" class="insc-agd">Inscreve-te aqui</a>` : ''}</td>
-            <td><button class="btn-edit" data-id="${ev._id}">Editar</button></td>
-            <td><button class="btn-delete" data-id="${ev._id}">Eliminar</button></td>
+            ${isAdmin ? `
+              <td>
+                <button class="btn-edit" data-id="${ev._id}">Editar</button>
+                <button class="btn-delete" data-id="${ev._id}">Eliminar</button>
+              </td>
+            ` : ''}
           `;
 
           table.appendChild(tr);
@@ -53,7 +59,7 @@ function fetchEventos() {
         });
       }
 
-      // Botões de eliminar
+      // delete
       container.querySelectorAll('.btn-delete').forEach(btn => {
         btn.addEventListener('click', () => {
           const id = btn.dataset.id;
@@ -71,10 +77,11 @@ function fetchEventos() {
         });
       });
 
-      // Botões de editar
+      // edit
       container.querySelectorAll('.btn-edit').forEach(btn => {
         btn.addEventListener('click', () => {
           const id = btn.dataset.id;
+          console.log('id:', id);
 
           fetch(`http://localhost:3000/programa/${id}`)
             .then(res => {
@@ -97,7 +104,7 @@ function fetchEventos() {
     .catch(console.error);
 }
 
-// Enviar novo evento ou editar
+// new event
 form.addEventListener('submit', function (e) {
   e.preventDefault();
   const formData = new FormData(form);
