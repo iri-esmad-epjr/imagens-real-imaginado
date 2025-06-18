@@ -10,7 +10,7 @@ footer{
     padding: 80px 40px;
     display: flex;
     height: 290px;
-    width: 60%;
+    width: 65%;
     align-self: center;
 }
 
@@ -66,7 +66,7 @@ p {
 .ftr-newsletter{
     background-color: #0E0E0E;
     padding: 80px 40px;
-    width: 40%;
+    width: 35%;
     height: 290px;
     color: #E4E4DA;
     border-left: 1px solid #E4E4DA;
