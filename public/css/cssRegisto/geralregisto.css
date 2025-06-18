@@ -4,18 +4,19 @@ body {
   padding: 0;
 }
 
-.banner {
+.banner2 {
   position: relative; /* não use absolute aqui */
   width: 100%;
   height: 650px;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
-.banner img {
+.banner2 img {
   width: 100%;
   height: 100%;
-  display: block;
+  display: flex;
   padding: 0;
   overflow: hidden;
   margin: 0;
@@ -32,4 +33,47 @@ body {
   text-align: center;
   z-index: 2;
   font-family: "Cormorant_Garamond_Bold";
+}
+
+.call-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+   z-index: 10;
+}
+
+.butto-call {
+  display: flex;
+  justify-content: space-between; /* Texto à esquerda, ícone à direita */
+  align-items: center; /* Alinha verticalmente o ícone com o texto */
+  margin-bottom: 0;
+  cursor: pointer;
+  border-bottom: 1px solid #0e0e0e;
+  padding-bottom: 0;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Kanit_light';
+}
+
+.icon-buttn {
+  width: 16px; /* Tamanho do ícone */
+  height: 16px;
+  object-fit: contain;
+}
+
+.icon-buttn.hover {
+  display: none;
+}
+
+.butto-call:hover .icon-buttn.default {
+  display: none;
+}
+
+.butto-call:hover .icon-buttn.hover {
+  display: inline;
+}
+.butto-call img.icon-buttn {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
