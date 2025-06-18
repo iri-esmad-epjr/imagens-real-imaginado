@@ -74,3 +74,66 @@ app.delete('/newsletter/:id', function (req, res) {
             res.status(500).send({ message: 'Error deleting Subscriber', error: err });
         });
 });
+
+
+// PROGRAMA
+app.post("/programa", function (req, res) {
+  let { dia, horario, titulo, oradores, linkInscricao } = req.body;
+
+  if (!dia || !horario || !titulo || !oradores) {
+    return res.status(400).send({ message: "Campos obrigatórios em falta!" });
+  }
+
+  let newEvent = new Programa({ dia, horario, titulo, oradores, linkInscricao });
+
+  newEvent
+    .save()
+    .then(function (event) {
+      res.send(event);
+    })
+    .catch(function (err) {
+      res.status(400).send({ message: "Error adding event!", error: err });
+    });
+});
+
+app.get("/programa", function (req, res) {
+  Programa.find()
+    .then(function (events) {
+      res.send(events);
+    })
+    .catch(function (err) {
+      res.status(500).send({ message: "Error fetching events!", error: err });
+    });
+});
+
+app.put("/programa/:id", function (req, res) {
+  Programa.findByIdAndUpdate(req.params.id, req.body, { new: true })
+    .then(function (events) {
+      if (events) {
+        res.send(events);
+      } else {
+        res.status(404).send({ message: "Event not found!" });
+      }
+    })
+    .catch(function (err) {
+      res.status(500).send({ message: "Error updating event!", error: err });
+    });
+});
+
+app.delete('/programa/:id', function (req, res) {
+    Programa.findByIdAndDelete(req.params.id)
+        .then(function (event) {
+            if (event) {
+                res.send({ message: 'Event deleted successfully!' });
+            } else {
+                res.status(404).send({ message: 'Event not found!' });
+            }
+        })
+        .catch(function (err) {
+            res.status(500).send({ message: 'Error deleting event!', error: err });
+        });
+});
+
+app.listen(3000, function () {
+  console.log("Server running on http://localhost:3000");
+});
