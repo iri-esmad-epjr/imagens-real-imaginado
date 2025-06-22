@@ -18,6 +18,7 @@
   box-sizing: border-box;
   text-align: left;
   margin-bottom: 80px;
+  margin-left: 20px;
 }
 
 .info-bloc h2 {
@@ -27,7 +28,6 @@
   margin-bottom: 0;
   color: #0e0e0e;
   text-align: left;
-  margin-top: 0;
   margin-top: 80px;
   font-family: "Cormorant_Garamond_Bold";
 }
@@ -51,6 +51,7 @@
   border-top: 1px solid #0e0e0e;
   padding: 15px 0;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .info-bloc li {
@@ -65,9 +66,15 @@
   text-align: left;
 }
 
+.inscriçoes {
+  margin-left: 20px;
+}
+
 .info-insc ul {
   font-family: "Kanit_Light";
   padding-left: 0;
   line-height: 1.6;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
