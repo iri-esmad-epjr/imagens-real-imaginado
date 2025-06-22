@@ -13,6 +13,7 @@
 
 .tabela-container h2 {
   font-size: 48px;
+  margin-top: 80px;
   margin-bottom: 0;
   position: relative;
   font-family: "Cormorant_Garamond_Bold";
@@ -31,6 +32,7 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 0;
+  margin-bottom: 80px;
   font-family: "Kanit_Light";
   margin-bottom: 25px;
 }
@@ -64,6 +66,7 @@
 .botao {
   display: inline-flex;
   padding: 12px 24px;
+  margin-bottom: 40px;
   align-items: center;
   gap: 8px;
   border: 1px solid #E4E4DA;
