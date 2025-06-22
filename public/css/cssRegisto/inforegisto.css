@@ -2,12 +2,11 @@
   display: flex;
   justify-content: space-between;
   gap: 20px; /* espaço entre os blocos */
-  padding: 0px;
+  padding: 20px 20px 20px 20px;
   margin: 0; /* centraliza o container */
   flex-wrap: wrap; /* garante que se adapte em telas menores */
   width: 100%;
   text-align: left;
-  margin-top: 0;
 }
 
 .info-bloc {
