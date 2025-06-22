@@ -4,9 +4,11 @@
   gap: 20px; /* espaço entre os blocos */
   padding: 20px 20px 20px 20px;
   margin: 0; /* centraliza o container */
+  padding: 0;
   flex-wrap: wrap; /* garante que se adapte em telas menores */
   width: 100%;
   text-align: left;
+  box-sizing: border-box;
 }
 
 .info-bloc {
@@ -56,7 +58,7 @@
 }
 
 .info-insc {
-  background-color: #D9D9D9;
+  background-color: #C1B655;
   margin: 0;
   text-align: left;
 }
