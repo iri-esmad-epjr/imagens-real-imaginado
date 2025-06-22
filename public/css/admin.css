@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.meio{
+    background-color: #C1B655;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 70%;
+    height: 400px;
+}
