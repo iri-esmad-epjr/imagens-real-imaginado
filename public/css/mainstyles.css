@@ -96,6 +96,7 @@
     font-family: "Kanit_Semibold";
     font-size: 18px;
     text-transform: uppercase;
+    text-align: left;
 }
 
 .titulo5{
@@ -401,23 +402,23 @@ body{
 }
 
 .btn-ntc-todas{
-    text-decoration: none;
+    justify-content: right;
+    display: flex;
     background-color: transparent;
     border-color: #0E0E0E;
-    border-radius: 50px;
-    border-style: solid;
-    display: flex;
-    justify-content: center;
-    align-items: send;
     width: 230px;
     bottom: 10px;
     padding: 12px 0;
     margin-right: 10px;
     margin-top: 20px;
+    border-radius: 50px;
     transition: 0.5s ease;
 }
 
 .btn-ntc-todas:hover{
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
     color: #E4E4DA;
     background-color: rgb(14, 14, 14);
 }
@@ -437,6 +438,7 @@ body{
     width: auto;
     height: fit-content;
     padding: 12px 70px;
+    text-decoration: none;
 }
 
 .ntc-section{

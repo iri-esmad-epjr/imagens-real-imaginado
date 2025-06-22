@@ -21,7 +21,7 @@ function fetchEventos() {
         const eventosDoDia = dias[dia];
 
         const btn = document.createElement("button");
-        btn.className = 'btn-acd titulo3';
+        btn.className = 'btn-acd titulo4';
         btn.textContent = dia;
 
         const divInfo = document.createElement('div');
