@@ -1,20 +1,20 @@
 .intro-bloc {
+  width: 50%;
   display: flex;
-  background: #CABE4F;
-  padding: 0;
   margin-bottom: 0;
   margin-top: 0;
+  padding: 40px;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
 .intro-bloc p{
-  flex:1;
-  min-width: 300px;
-  padding: 25px;
-  box-sizing: border-box;
-  text-align:justify;
+  padding: 0;
+  text-align: justify;
   color: #0e0e0e;
-  margin: 20px;
+  margin: 0;
   font-size: 20px;
   line-height: 1.7;
   font-family: "Kanit_Light";
