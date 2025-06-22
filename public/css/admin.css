@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    background-color: #0e0e0e;
+}
+
+.meio{
+    background-color: #C1B655;
+    display: inline-flexbox;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    width: 70%;
+    height: 450px;
+    top: 80%;
+    margin: 12% 15%;
+}
